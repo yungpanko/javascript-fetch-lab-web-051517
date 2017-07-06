@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>JavaScript fetch() Lab</title>
     <style>
@@ -8,15 +9,18 @@
         display: -webkit-flex;
         display: flex;
       }
-      .flexbox-container > div {
+
+      .flexbox-container>div {
         width: 50%;
         padding: 10px;
       }
-      .flexbox-container > div:first-child {
+
+      .flexbox-container>div:first-child {
         margin-right: 20px;
       }
     </style>
   </head>
+
   <body>
     <main id="main">
       <div id="errors"></div>
@@ -30,13 +34,13 @@
       <div>
         <h3>Issues</h3>
         <div>
-          Issue Title: <input type="text" id="title"><br>
-          Issue Text: <input type="text" id="body"><br>
+          Issue Title: <input type="text" id="title"><br> Issue Text: <input type="text" id="body"><br>
           <a href="#" id="search" onclick="createIssue()">Create Issue</a>
         </div>
         <div id="issues"></div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="handlebars.js"></script>
     <script src="index.js"></script>
     <script id="repo-template" type="text/x-handlebars-template">
@@ -47,4 +51,5 @@
       <!--fill me in with templatey goodness-->
     </script>
   </body>
+
 </html>
